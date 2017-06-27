@@ -2,36 +2,89 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    html { font-size: 18px; }
     
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, 
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
-    "Fira Sans", "Droid Sans", "Helvetica Neue", 
-    sans-serif;
+      "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
+      "Fira Sans", "Droid Sans", "Helvetica Neue", 
+      sans-serif;
+      width: 100vw;
+      -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
     }
+    
+    * { box-sizing: border-box; }
     
     section.top {
       height: 100vh;
-      line-height: calc(100vh - 4rem);
+      line-height: calc(100vh - 8rem);
+      position: relative;
+      overflow: hidden;
     }
 
     h1 {
       font-size: 3rem;
       text-align: center;
     }
-
-    section.mid {
-      background: red;
+    
+    .foot {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      line-height: 1rem;
+      bottom: 1rem;
+      font-size: 2rem;
+      transform: scaleX(2);
+      color: #ec4c4c;
+      cursor: pointer;
+    }
+    
+    section.bottom {
+      background: #ec4c4c;
+      height: 100vh;
+      padding: 1.5rem;
       color: white;
-      font-size: 1rem;
-      padding: 1rem;
+      font-size: 1.25rem;
+    }
+    
+    h3 {
+      font-size: .6rem;
+      text-transform: uppercase;
+      letter-spacing:.1rem;
+      margin-top: 2rem;
+      border-bottom: 2px solid white;
+      display: inline-block;
+      padding-bottom: .5rem;
+    }
+    
+    h4 {
+      font-weight: normal;
     }
   </style>
 </head>
 <body>
+  
   <section class="top">
     <h1>No.</h1>
+    <a href="#bottom"><div class="foot">▾</div></a>
   </section>
+  
+  <section class="bottom" id="bottom">
+    Currently, there's been <strong>no</strong> justice
+    for Grenfell victims.
+    
+    <h3>What justice will look like</h3>
+    
+    <h4>Historic failures</h4>
+    
+    <h4>Failures in lead-up</h4>
+    
+    <h4>Failures during fire</h4>
+    
+    <h4>Failures in aftermath</h4>
+    
+  </section>
+
 </body>
 </html>
