@@ -2,7 +2,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    html { font-size: 18px; }
+    html { font-size: 20px; }
     
     body {
       margin: 0;
@@ -12,6 +12,7 @@
       sans-serif;
       width: 100vw;
       -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+      line-height: 1.75rem;
     }
     
     * { box-sizing: border-box; }
@@ -34,28 +35,50 @@
       text-align: center;
       line-height: 1rem;
       bottom: 1rem;
-      font-size: 2rem;
-      transform: scaleX(2);
+      font-size: 1rem;
       color: #ec4c4c;
       cursor: pointer;
     }
     
+    .foot em {
+      font-style: normal;
+      font-size: 1.75rem;
+      transform: scaleX(2);
+      display: inline-block;
+    }
+    
     section.bottom {
       background: #ec4c4c;
-      height: 100vh;
-      padding: 1.5rem;
+      padding: 4rem;
       color: white;
       font-size: 1.25rem;
     }
     
+    ol, li { padding: 0; margin: 0; }
+    
+    ol li {
+      margin: 1rem;
+    }
+    
+    section.bottom a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 3px solid rgba(255,255,255,0.25);
+      padding-bottom: .25rem;
+    }
+    
+    section.bottom a:hover {
+      border-bottom-color: white;
+    }
+    
     h3 {
-      font-size: .6rem;
+      font-size: 1rem;
       text-transform: uppercase;
       letter-spacing:.1rem;
       margin-top: 2rem;
-      border-bottom: 2px solid white;
+      border-bottom: 3px solid white;
       display: inline-block;
-      padding-bottom: .5rem;
+      padding-bottom: 0rem;
     }
     
     h4 {
@@ -67,22 +90,47 @@
   
   <section class="top">
     <h1>No.</h1>
-    <a href="#bottom"><div class="foot">▾</div></a>
+    <a href="#bottom"><div class="foot">Find justice<br><em>▾</em></div></a>
   </section>
   
   <section class="bottom" id="bottom">
     Currently, there's been <strong>no</strong> justice
-    for Grenfell victims.
+    for the victims of Grenfell.<br />
     
-    <h3>What justice will look like</h3>
+    <h3>Justice</h3><br />
+    To find justice, we start with four questions:<br />
     
-    <h4>Historic failures</h4>
+    <ol>
+      <li><a href="#who">Who are the victims?</a></li>
+      <li><a href="#how">What crimes were committed against them?</a></li>
+      <li><a href="#by-who">Who committed the crimes?</a></li>
+      <li><a href="#by-who">What should the punishment be?</a></li>
+    </ol>
     
-    <h4>Failures in lead-up</h4>
     
-    <h4>Failures during fire</h4>
+    <h3 id="who">1. Who are the victims</h3>
+    <p>
+      <ol>
+        <li>The children, women and men who lost their lives in the fire</li>
+        <li>Their friends and families</li>
+        <li>The residents who survived</li>
+        <li>First responders and volunteers</li>
+        <li>
+          As the picture is now emerging that there was a systemic safety failure
+          in social housing blocks across England, and Grenfell was just
+          the first major disaster to expose that fact - <strong>it's clear that many other social
+          housing residents have been wronged</strong>, and any number of them could have
+          been involved in fatal fires.
+        </li>
+      </ol>
+    </p>
     
-    <h4>Failures in aftermath</h4>
+    
+    <h3 id="how">How</h3><br />
+    More here...<br />
+    
+    <h3 id="by-who">By who</h3><br />
+    More here...<br />
     
   </section>
 
