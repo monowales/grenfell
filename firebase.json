@@ -1,9 +1,11 @@
-"hosting": {
-  "firebase": "grenfell-f0fbb",
-  "public": ".",
-  "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
-  ]
+{
+  "hosting": {
+    "firebase": "grenfell-f0fbb",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
 }
